@@ -369,7 +369,7 @@ $(document).ready(function() {
 
 });
 
-/* Function wich opens google search results for each donor */
+/* Function which opens google search results for each donor */
 function googleSearch(d) {
   var donor = d.donor;
   window.open("https://www.google.com/search?q=" + donor);
