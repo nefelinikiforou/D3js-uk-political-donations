@@ -317,7 +317,7 @@ function mouseover(d, i) {
 	var party = d.partyLabel;
 	var entity = d.entityLabel;
 	var offset = $("svg").offset();
-	
+	this.style.cursor="hand";	//change the style of cursor to hand
 
 
 	// image url that want to check
@@ -353,7 +353,9 @@ function mouseover(d, i) {
 function mouseout() {
 	// no more tooltips
 		var mosie = d3.select(this);
-
+		
+		this.style.cursor="default";	//default style of cursor
+		
 		mosie.classed("active", false);
 
 		d3.select(".tooltip")
