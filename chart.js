@@ -317,7 +317,7 @@ function mouseover(d, i) {
 	var party = d.partyLabel;
 	var entity = d.entityLabel;
 	var offset = $("svg").offset();
-	this.style.cursor="pointer";	//change the style of cursor to hand
+	this.style.cursor="hand";	//change the style of cursor to hand
 
 
 	// image url that want to check
