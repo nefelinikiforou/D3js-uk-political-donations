@@ -97,6 +97,7 @@ function start() {
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
+		.on("click", googleSearch);	//activate google search
 
 		force.gravity(0)
 			.friction(0.75)
@@ -368,4 +369,8 @@ $(document).ready(function() {
 
 });
 
-
+/* Function wich opens google search results for each donor */
+function googleSearch(d) {
+  var donor = d.donor;
+  window.open("https://www.google.com/search?q=" + donor);
+}
