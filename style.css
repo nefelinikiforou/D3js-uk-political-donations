@@ -4,6 +4,7 @@ body {
 }
 p {
     margin: 5px 0;
+    .zoom;
 }
 strong {
     font-weight: 700;
@@ -237,6 +238,6 @@ https://github.com/yui/pure/blob/master/LICENSE.md
     color: #fff
 }
 
-p.zoom:hover {
+.zoom:hover {
     font-size: 300%; 
 }
