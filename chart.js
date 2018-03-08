@@ -347,6 +347,7 @@ function mouseover(d, i) {
 			.style("display","block");
 	
 	responsiveVoice.speak(donor + ' £' + amount);	//add voice
+	
 	}
 
 function mouseout() {
