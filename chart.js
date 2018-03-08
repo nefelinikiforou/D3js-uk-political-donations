@@ -97,8 +97,7 @@ function start() {
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
-		.on("click", googleSearch)//;	//activate google search
-		$("p").addClass("zoom");
+		.on("click", googleSearch);	//activate google search
 	
 		force.gravity(0)
 			.friction(0.75)
