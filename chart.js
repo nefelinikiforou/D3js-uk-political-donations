@@ -318,7 +318,7 @@ function mouseover(d, i) {
 	var entity = d.entityLabel;
 	var offset = $("svg").offset();
 	this.style.cursor="pointer";	//change the style of cursor to pointer
-	//this.responsiveVoice.speak(donor + ' £' + amount);	//add voice
+	window.responsiveVoice.speak(donor + ' £' + amount);	//add voice
 
 	// image url that want to check
 	var imageFile = "https://raw.githubusercontent.com/ioniodi/D3js-uk-political-donations/master/photos/" + donor + ".ico";
@@ -354,7 +354,7 @@ function mouseout() {
 		var mosie = d3.select(this);
 		
 		this.style.cursor="default";	//default style of cursor
-		//this.responsiveVoice.cancel();	//remove voice
+		window.responsiveVoice.cancel();	//remove voice
 	
 		mosie.classed("active", false);
 
