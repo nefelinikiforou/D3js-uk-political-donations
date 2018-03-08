@@ -4,6 +4,7 @@ body {
 }
 p {
     margin: 5px 0;
+    class="zoom"
 }
 strong {
     font-weight: 700;
@@ -235,4 +236,8 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .pure-button-active, .pure-button:active {
     color: rgb(0, 120, 231);
     color: #fff
+}
+
+.zoom:hover {
+    font-size: 300%; 
 }
