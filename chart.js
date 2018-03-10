@@ -81,7 +81,7 @@ function transition(name) {
 		return fundsType();
 	}
 	//New transition
-	if (name === "group-by-amount") {
+	if (name === "group-by-donation-amount") {
 		$("#initial-content").fadeOut(250);
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
