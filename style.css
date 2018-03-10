@@ -106,39 +106,39 @@ li {
 #first {
     font-weight: bold;
     position: absolute;
-    top: 100px;
-    left: -403px;
+    top: 235px;
+    left: 190px;
     width: 93px;
 }
 
 #second {
     font-weight: bold;
     position: absolute;
-    top: 100px;
-    left: -289px;
+    top: 235px;
+    left: 350px;
     width: 93px;
 }
 
 #third {
     font-weight: bold;
     position: absolute;
-    top: 100px;
-    left: -149px;
+    top: 235px;
+    left: 470px;
     width: 93px;
 }
 
 #fourth {
     font-weight: bold;
     position: absolute;
-    top: 100px;
-    left: -23px;
+    top: 235px;
+    left: 610px;
     width: 93px;
 }
 
 #fifth {
     font-weight: bold;
     position: absolute;
-    top: 100px;
+    top: 235px;
     left: 734px;
     width: 93px;
 }
@@ -146,8 +146,8 @@ li {
 #sixth {
     font-weight: bold;
     position: absolute;
-    top: 100px;
-    left: 232px;
+    top: 235px;
+    left: 870px;
     width: 93px;
 }
 /* Value scale */
