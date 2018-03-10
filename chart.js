@@ -163,7 +163,7 @@ function amountGroup() {
 	force.gravity(0)
 		.friction(0.8)
 		.charge(function(d) { return -Math.pow(d.radius, 2.0) / 3; })
-		.on("tick", parties)
+		.on("tick", amount)
 		.start()
 		.colourByParty();
 }
