@@ -199,7 +199,7 @@ function all(e) {
 }
 //New function
 function amounts(e) {
-	node.each(moveToAmount(e.alpha))
+	node.each(moveToAmounts(e.alpha))
 		//.each(collide(0.001));
 
 		node.attr("cx", function(d) { return d.x; })
