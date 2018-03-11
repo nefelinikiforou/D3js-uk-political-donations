@@ -293,7 +293,7 @@ function moveToAmounts(alpha) {
 				centreX = svgCentre.x; // if the amount of the donation > maxVal, it is classified within the largest amounts
 			}
 		
-		d.x += (centreX - d.x) * (brake + 0.1) * alpha * 2.2;	//d.x += (centreX - d.x) * (brake + 0.02) * alpha * 1.1;
+		d.x += (centreX - d.x) * (brake + 0.02) * alpha * 2.2;	//d.x += (centreX - d.x) * (brake + 0.02) * alpha * 1.1;
 		d.y += (centreY - d.y) * (brake + 0.1) * alpha * 2.2;	//d.y += (centreY - d.y) * (brake + 0.02) * alpha * 2.2;
 	};
 }
