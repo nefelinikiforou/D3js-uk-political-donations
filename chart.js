@@ -293,8 +293,8 @@ function moveToAmount(alpha) {
 				centreX = svgCentre.x; // εάν το ποσό υπερβαίνει το maxVal πάλι θα μπει μαζί με τα μεγαλύτερα
 			}
 		
-		d.x += (centreX - d.x) * (brake + 0.06) * alpha * 1.2;	//d.x += (centreX - d.x) * (brake + 0.02) * alpha * 1.1;
-		d.y += (centreY - d.y) * (brake + 0.06) * alpha * 1.2;	//d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
+		d.x += (centreX - d.x) * (brake + 0.08) * alpha * 1.3;	//d.x += (centreX - d.x) * (brake + 0.02) * alpha * 1.1;
+		d.y += (centreY - d.y) * (brake + 0.08) * alpha * 1.3;	//d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
 // Collision detection function by m bostock
