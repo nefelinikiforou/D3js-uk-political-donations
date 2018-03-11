@@ -88,7 +88,7 @@ function transition(name) {
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
 		$("#view-donation-amount").fadeIn(1000);
-		return amountGroup();
+		return amountsGroup();
 	}
 	}
 
@@ -159,11 +159,11 @@ function fundsType() {
 		.start();
 }
 //New function
-function amountGroup() {
+function amountsGroup() {
 	force.gravity(0)
 		.friction(0.8)
 		.charge(function(d) { return -Math.pow(d.radius, 2.0) / 3; })
-		.on("tick", amount)
+		.on("tick", amounts)
 		.start()
 		.colourByParty();
 }
@@ -198,7 +198,7 @@ function all(e) {
 			.attr("cy", function(d) {return d.y; });
 }
 //New function
-function amount(e) {
+function amounts(e) {
 	node.each(moveToAmount(e.alpha))
 		//.each(collide(0.001));
 
@@ -274,7 +274,7 @@ function moveToFunds(alpha) {
 	};
 }
 //New function+++
-function moveToAmount(alpha) {
+function moveToAmounts(alpha) {
 	return function(d) {
 		var centreY = svgCentre.y;
 		if (d.value <= 25001) {
@@ -293,8 +293,8 @@ function moveToAmount(alpha) {
 				centreX = svgCentre.x; // εάν το ποσό υπερβαίνει το maxVal πάλι θα μπει μαζί με τα μεγαλύτερα
 			}
 		
-		d.x += (centreX - d.x) * (brake + 0.08) * alpha * 1.3;	//d.x += (centreX - d.x) * (brake + 0.02) * alpha * 1.1;
-		d.y += (centreY - d.y) * (brake + 0.08) * alpha * 1.3;	//d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
+		d.x += (centreX - d.x) * (brake + 0.10) * alpha * 1.4;	//d.x += (centreX - d.x) * (brake + 0.02) * alpha * 1.1;
+		d.y += (centreY - d.y) * (brake + 0.10) * alpha * 1.4;	//d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
 // Collision detection function by m bostock
