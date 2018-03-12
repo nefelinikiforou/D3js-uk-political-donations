@@ -103,6 +103,11 @@ li {
 }
 
 /* Amount of donation view */
+#view-donation-amount {
+    top: 140px;
+    left: 500px;
+    width: 370px;  
+}
 #first {
     font-weight: bold;
     position: absolute;
