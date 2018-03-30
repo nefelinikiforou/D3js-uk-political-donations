@@ -228,24 +228,24 @@
      <h4>
         <span>&nbsp;</span>
         <img src="https://avatars2.githubusercontent.com/u/22655733?v=4" height="42" width="42">  
-        <span class="ml3">&nbsp;nefelinikiforou&nbsp;</span>
+        <span class="ml">&nbsp;nefelinikiforou&nbsp;</span>
      </h4>
   </div>
   <script>
-    $('.ml3').each(function(){
+    $('.ml').each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
     });
     anime.timeline({loop: true})
     .add({
-        targets: '.ml3 .letter',
+        targets: '.ml .letter',
         opacity: [0,1],
-        easing: "easeInOutQuad",
-        duration: 2250,
+        easing: "easeOutExpo",
+        duration: 550,
         delay: function(el, i) {
-          return 150 * (i+1)
+          return 200 * i
         }
      }).add({
-        targets: '.ml3',
+        targets: '.ml',
         opacity: 0,
         duration: 1000,
         easing: "easeOutExpo",
@@ -253,8 +253,9 @@
      });
   </script>
   <style>
-     .ml3 {
-        font-weight: 900;
+     .ml {
+        font-weight: bold;
+        line-height: 1.6;
      }
   </style>
   <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
