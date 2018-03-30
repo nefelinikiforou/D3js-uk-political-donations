@@ -228,7 +228,7 @@
      <h4>
         <span>&nbsp;</span>
         <img src="https://avatars2.githubusercontent.com/u/22655733?v=4" height="42" width="42">  
-        <span class="ml">&nbsp;nefelinikiforou&nbsp;</span>
+        <span class="ml"><span class="letters">&nbsp;nefelinikiforou&nbsp;</span></span>
      </h4>
   </div>
   <script>
@@ -239,9 +239,10 @@
     .add({
         targets: '.ml .letter',
         scale: [6,1],
-        opacity: [0,2],
+        opacity: [0,1],
         translateY: [100,0],
         translateX: 100,
+        translateZ: 0,
         easing: "easeOutExpo",
         duration: 550,
         delay: function(el, i) {
