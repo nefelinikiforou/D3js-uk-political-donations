@@ -238,6 +238,9 @@
     anime.timeline({loop: true})
     .add({
         targets: '.ml .letter',
+        scale: [6,1],
+        translateY: [100,0],
+        translateZ: 0,
         opacity: [0,1],
         easing: "easeOutExpo",
         duration: 550,
@@ -246,9 +249,6 @@
         }
      }).add({
         targets: '.ml',
-        scale: [6,1],
-        translateY: [100,0],
-        translateZ: 0,
         opacity: 0,
         duration: 1000,
         easing: "easeOutExpo",
