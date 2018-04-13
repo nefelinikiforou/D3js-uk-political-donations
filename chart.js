@@ -402,15 +402,13 @@ function mouseover(d, i) {
 	
 	responsiveVoice.speak("Donor:     " + donor + "Amount of donation:     " + "  £" + amount);	//add voice
 	
-	// Add images to sidebar
-	var element = document.createElement("img");
-// 	img.id = idCount;
-// 	idCount = idCount+1;	
-	element.src = imageFile;
-	element.setAttribute("height", "42");
-	element.setAttribute("width", "42");
+	//Add images to sidebar
+	var element = document.createElement("img");	
+	element.src = imageFile;	//element source is the current donor's image url
+	//element.setAttribute("height", "42");
+	//element.setAttribute("width", "42");
 
-	document.getElementById("images-sidebar").appendChild(element);
+	document.getElementById("images-sidebar").appendChild(element);	//get the element with the specified id and
 	indexOf(donor).push(donor);
 	
 	
