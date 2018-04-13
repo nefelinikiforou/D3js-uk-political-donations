@@ -400,16 +400,16 @@ function mouseover(d, i) {
 		.html(infoBox)
 			.style("display","block");
 	
-	responsiveVoice.speak("Donor:     " + donor + "Amount of donation:     " + "  £" + amount);	//add voice
+	responsiveVoice.speak("Donor:     " + donor + "   Amount of donation:     " + "  £" + amount);	//add voice
 	
 	//Add images to sidebar
 	var element = document.createElement("img");	
 	element.src = imageFile;	//element source is the current donor's image url
-	//element.setAttribute("height", "42");
-	//element.setAttribute("width", "42");
+	element.setAttribute("height", "42");	//set the dimensions of the image to 42x42 pixels
+	element.setAttribute("width", "42");
 
-	document.getElementById("images-sidebar").appendChild(element);	//get the element with the specified id and
-	indexOf(donor).push(donor);
+	document.getElementById("images-sidebar").appendChild(element);	//get the element with the specified id and append the element node with the current donor's image
+	indexOf(donor).push(donor);	//return the position of the current donor's image and move to the next donor's image
 	
 	
 	
