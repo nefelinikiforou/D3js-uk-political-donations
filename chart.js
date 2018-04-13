@@ -401,6 +401,20 @@ function mouseover(d, i) {
 			.style("display","block");
 	
 	responsiveVoice.speak("Donor:     " + donor + "Amount of donation:     " + "  £" + amount);	//add voice
+	
+	// Add images to sidebar
+	var element = document.createElement("img");
+// 	img.id = idCount;
+// 	idCount = idCount+1;	
+	element.src = imageFile;
+	element.setAttribute("height", "42");
+	element.setAttribute("width", "42");
+
+	document.getElementById("images-sidebar").appendChild(element);
+	indexOf(donor).push(donor);
+	
+	
+	
 	}
 
 function mouseout() {
