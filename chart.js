@@ -5,6 +5,7 @@ var nodes = [];
 var force, node, data, maxVal;
 var brake = 0.2;
 var radius = d3.scale.sqrt().range([10, 20]);
+var d = []; //Donor list
 
 var partyCentres = { 
     con: { x: w / 3, y: h / 3.3}, 
@@ -403,14 +404,14 @@ function mouseover(d, i) {
 	responsiveVoice.speak("Donor:     " + donor + "   Amount of donation:     " + "  £" + amount);	//add voice
 	
 	//Add images to sidebar
-	if ((indexOf(donor) > -1) == false) {
+	if ((d.indexOf(donor) > -1) == false) {
 		var element = document.createElement("img");	
 		element.src = imageFile;	//element source is the current donor's image url
 		element.setAttribute("height", "42");	//set the dimensions of the image to 42x42 pixels
 		element.setAttribute("width", "42");
 
 		document.getElementById("images-sidebar").appendChild(element);	//get the element with the specified id and append the element node with the current donor's image
-		indexOf(donor).push(donor);	//return the position of the current donor's image and move to the next donor's image
+		d.push(donor);	//return the position of the current donor's image and move to the next donor's image
 	}
 	
 	
