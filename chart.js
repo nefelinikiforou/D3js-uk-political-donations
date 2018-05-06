@@ -403,7 +403,7 @@ function mouseover(d, i) {
 	responsiveVoice.speak("Donor:     " + donor + "   Amount of donation:     " + "  £" + amount);	//add voice
 	
 	//Add images to sidebar
-	if (indexOf(donor) != -1) {
+	if ((indexOf(donor) != -1) == false) {
 		var element = document.createElement("img");	
 		element.src = imageFile;	//element source is the current donor's image url
 		element.setAttribute("height", "42");	//set the dimensions of the image to 42x42 pixels
