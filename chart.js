@@ -402,7 +402,7 @@ function mouseover(d, i) {
 			.style("display","block");
 	
 	responsiveVoice.speak("Donor:     " + donor + "   Amount of donation:     " + "  £" + amount);	//add voice
-	console.log(imageFile);
+	
 	//Add images to sidebar
 	if ((dlist.indexOf(donor) > -1) == false) {
 		var element = document.createElement("img");	
