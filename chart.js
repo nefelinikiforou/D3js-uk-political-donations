@@ -404,21 +404,16 @@ function mouseover(d, i) {
 	responsiveVoice.speak("Donor:     " + donor + "   Amount of donation:     " + "  £" + amount);	//add voice
 	
 	//Add images to sidebar
-	var flag = false
-	if ((imageFile == "404: Not Found") == false) {
-		flag = true
-	}
-	if (flag == true) {
-		if ((dlist.indexOf(donor) > -1) == false) {
-			var element = document.createElement("img");	
-			element.src = imageFile;	//element source is the current donor's image url
-			element.setAttribute("height", "42");	//set the dimensions of the image to 42x42 pixels
-			element.setAttribute("width", "42");
+	if ((dlist.indexOf(donor) > -1) == false) {
+		var element = document.createElement("img");	
+		element.src = imageFile;	//element source is the current donor's image url
+		element.setAttribute("height", "42");	//set the dimensions of the image to 42x42 pixels
+		element.setAttribute("width", "42");
 
-			document.getElementById("images-sidebar").appendChild(element);	//get the element with the specified id and append the element node with the current donor's image
-			dlist.push(donor);	//return the position of the current donor's image and move to the next donor's image
-		}
+		document.getElementById("images-sidebar").appendChild(element);	//get the element with the specified id and append the element node with the current donor's image
+		dlist.push(donor);	//return the position of the current donor's image and move to the next donor's image
 	}
+	
 	
 	}
 
