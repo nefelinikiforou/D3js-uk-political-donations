@@ -404,9 +404,9 @@ function mouseover(d, i) {
 	responsiveVoice.speak("Donor:     " + donor + "   Amount of donation:     " + "  £" + amount);	//add voice
 	
 	//Add images to sidebar
-	var flag = true
-	if (imageFile == false) {
-		flag = false
+	var flag = false
+	if (imageFile == true) {
+		flag = true
 	}
 	if (flag == true) {
 		if ((dlist.indexOf(donor) > -1) == false) {
