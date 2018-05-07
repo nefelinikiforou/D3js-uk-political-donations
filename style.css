@@ -32,7 +32,7 @@ li {
 
 /* Images Sidebar */
 #images-sidebar {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     position: absolute;
     left: 1045px;
     width: 288px;
