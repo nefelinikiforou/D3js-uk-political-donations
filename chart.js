@@ -404,7 +404,11 @@ function mouseover(d, i) {
 	responsiveVoice.speak("Donor:     " + donor + "   Amount of donation:     " + "  £" + amount);	//add voice
 	
 	//Add images to sidebar
-	if (imageFile == true) {
+	var flag = true
+	if (imageFile == false) {
+		flag = false
+	}
+	if (flag == true) {
 		if ((dlist.indexOf(donor) > -1) == false) {
 			var element = document.createElement("img");	
 			element.src = imageFile;	//element source is the current donor's image url
