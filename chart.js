@@ -405,7 +405,7 @@ function mouseover(d, i) {
 	
 	//Add images to sidebar
 	var flag = false
-	if (imageFile == true) {
+	if ((imageFile == 404) == false) {
 		flag = true
 	}
 	if (flag == true) {
